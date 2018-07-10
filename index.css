@@ -1,0 +1,230 @@
+* {box-sizing: border-box;
+overflow: visible;}
+
+
+#roomAni {
+  height: 110%;
+  background-color: #a3b4d1;
+  padding-top:10px;
+  padding-left: 10px;
+}
+
+#roomPic {position: fixed;
+top: 17px;
+left: 955px;}
+
+.ceiling img {
+  width: 99%
+}
+
+.front img {
+  width: 99%
+}
+
+.floor {
+  width: 420px
+}
+
+.ceiling {
+  width: 418px
+}
+
+#floaty img {
+  width: 400px;
+  float: left
+}
+/*
+#ceiling {
+  transition-duration: 4s;
+  transition-delay: 5s;
+}
+
+#left {
+  transition-duration: 6s;
+  transition-delay: 3s;
+}
+
+#right {
+  transition-duration: 5s;
+  transition-delay: 4s;
+}
+
+#floor {
+  transition-duration: 5s;
+  transition-delay: 4s;
+}
+
+#center {
+  transition-duration: 4s;
+  transition-delay: 25s;
+}
+
+#center img{
+  transition-duration: 4s;
+  transition-delay: 5s;
+}
+
+*/
+
+@keyframes floorMove {
+  100% {
+    transform-origin: center;
+    position: absolute;
+    left: 272px;
+    top: 349px;
+    transform: perspective(520px) rotateX(69deg);
+  }}
+
+
+
+  #floor {
+    /*The name of your defined animation (after @keyframes)*/
+    -webkit-animation-name: floorMove;
+      -webkit-animation-delay: 3s;
+    /*How long the animation will run*/
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+       -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+         -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+            transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+
+
+  }
+
+  @keyframes centerMove {
+    100% {
+  position: absolute;
+      left: 318px;
+      top: 202px;
+    width: 310px;
+  height:310px;
+    }}
+
+
+
+    #center {
+      /*The name of your defined animation (after @keyframes)*/
+      -webkit-animation-name: centerMove;
+        -webkit-animation-delay: 3s;
+      /*How long the animation will run*/
+      -webkit-animation-duration: 5s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-direction: alternate;
+          -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+     -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+       -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+          transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+
+    }
+
+@keyframes centerImove {
+100% {  width: 305px};
+}
+
+#center img{
+  /*The name of your defined animation (after @keyframes)*/
+  -webkit-animation-name: centerImove;
+    -webkit-animation-delay: 3s;
+  /*How long the animation will run*/
+  -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+   -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+     -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+        transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+}
+
+
+
+  @keyframes ceilingMove {
+    100% {
+      left: 265px;
+      top: -45px;
+      transform-origin: center;
+  position: absolute;
+      transform: perspective(560px) rotateZ(180deg) rotateX(70deg);
+    }
+  }
+  #ceiling {
+    /*The name of your defined animation (after @keyframes)*/
+    -webkit-animation-name: ceilingMove;
+      -webkit-animation-delay: 3s;
+    /*How long the animation will run*/
+    -webkit-animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+         -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+           -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+              transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+  }
+  @keyframes leftMove {
+    100% {
+      transform-origin: center;
+      transform: perspective(560px) rotateY(70deg);
+      position: absolute;
+      left: 69px;
+      top: 154px;
+    }
+  }
+  #left {
+    /*The name of your defined animation (after @keyframes)*/
+    -webkit-animation-name: leftMove;
+      -webkit-animation-delay: 3s;
+    /*How long the animation will run*/
+    -webkit-animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+ -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+   -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+      transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+  }
+  @keyframes rightMove {
+    100% {
+      float: right;
+      transform-origin: center;
+  position: absolute;
+      transform: perspective(560px) rotateZ(180deg) rotateY(70deg);
+      left: 470px;
+      top: 152px;
+    }
+  }
+  #right {
+    /*The name of your defined animation (after @keyframes)*/
+    -webkit-animation-name: rightMove;
+    /*How long the animation will run*/
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+       -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+         -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+            transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+
+  }
+
+  #room {float:right;}
+
+  #expalain {float:right;
+    background-color: #dae0ea;
+    border-style: groove;
+    border-width: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 520px;
+    position: fixed;
+    top: 437px;
+    left: 890px;}
+
+    p {font-weight: bold;}
