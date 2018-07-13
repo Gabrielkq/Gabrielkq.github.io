@@ -1,0 +1,106 @@
+*{margin: 0;
+padding: 0;}
+
+
+.center {
+  position: absolute;
+  left: 270px;
+  top: 300px;
+}
+
+
+
+.ceiling {
+
+  position: absolute;
+  left: 265px;
+  top: -53px;
+  transform-origin: center;
+
+  transform: perspective(560px) rotateZ(180deg) rotateX(70deg);
+
+}
+
+
+
+.lleft {width: 100px;
+position: absolute;
+left: 300px;
+top: 550px;
+}
+
+.rright {width: 100px;
+  position: absolute;
+left: 550px;
+top: 550px;
+}
+
+
+.floor {
+  transform-origin: center;
+  position: absolute;
+  left: 279px;
+  top: 349px;
+
+  transform: perspective(520px) rotateX(69deg);
+
+}
+
+.turns {font-size: 30px;
+  position: absolute;
+  left: 220px;
+  top: 660px;
+}
+
+
+/*div {width: 400px;
+  height: 400px;
+  overflow: auto;}*/
+
+  img {width: 400px}
+
+
+.ceiling img {width: 99%}
+.front img {width: 99%}
+.floor {width: 420px}
+.ceiling {width:418px}
+  .center {
+    position: absolute;
+    left: 325px;
+    top: 202px;
+  width: 310px;
+height:310px}
+.left {
+  /* perspective function in transform property */
+  transform-origin: center;
+transform: perspective(560px) rotateY(70deg);
+position: absolute;
+left: 65px;
+top: 154px;
+
+
+}
+
+.right {
+  float: right;
+  transform-origin: center;
+
+
+  transform: perspective(560px) rotateZ(180deg) rotateY(70deg);
+  position: absolute;
+  left: 470px;
+  top: 152px;
+
+}
+
+.left {width: 420px}
+
+.right {width: 420px}
+
+.center img {width: 305px}
+
+/*#floaty { border: 20px gray;
+  width: 1000px;
+  length: 2000px;
+  margin-left: 200px
+position: relative;}

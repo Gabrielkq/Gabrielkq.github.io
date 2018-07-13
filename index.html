@@ -10,69 +10,140 @@
     <body>
 
 
+      <nav class='nav-wrapper'>
+        <ul>
+          <li><a href="#overview">CSS Transformations</a></li>
+          <li><a href="#final">Overview</a></li>
+          <li><a href="#gallery">Art Gallery</a></li>
 
 
+
+
+
+        </ul>
+      </nav>
       </div id='cont'>
 
-      <div id="roomAni">
-        <div id="floaty">
 
 
-              <div id="ceiling">
-
-                <img src="ceilings.jpg">
 
 
-              </div>
-              <div id="left">
+
+      <div id='overview'>
+
+        <div id="roomAni">
+          <div id="floaty">
 
 
-                <img src="wall3.jpeg">
+                <div id="ceiling">
+
+                  <img src="ceilings.jpg">
 
 
-              </div>
-
-              <div id="right">
-
-
-                <img src="wall1a.jpeg" alt="">
+                </div>
+                <div id="left">
 
 
-              </div>
-
-              <div id="floor">
-
-                <img src="tilefloors.jpeg">
+                  <img src="wall3.jpeg">
 
 
-              </div>
+                </div>
 
-              <div id="center">
-
-                <img src="wall4.jpeg">
+                <div id="right">
 
 
-              </div>
+                  <img src="wall1a.jpeg" alt="">
 
-              <div id="room">
-                <img id="roomPic" src="room4.jpeg">
-              </div>
 
-              <div id="expalain">
+                </div>
 
-                <p class="ttext">For my final project in Web Development 100, I took the idea of an image gallery and made it immersive, interactive, and dynamic. Begining with images of different artwork I had created, I designed a virtual room with my artwork on the walls that the user could turn and see view it from different cardinal directions.</p>
-                <p class="ttext">I attempted to accomplish this feat using as most CSS as possible, while having the least ammount of images. These CSS commands were not covered in class, and it required much googling, self-directed learning, and quite a bit of trial and error. Eventually, I was able to finagle a semblance of what I had envisioned.</p>
-                <p class="ttext">Here is a visualization of how I got it to work, starting from the images with their original placement, size, and shape.  The room is then assembled into a proper one-point perspective, with the all CSS transformations being ANIMATED, with custom cubic-bezier timing on an infinite and reversing loop.</p>
-                <p class="ttext">A miniturized screenshot of the final room is directly above for reference.</p>
-                <p> this is a change to show updating for git push <p>
-              </div>
+                <div id="floor">
 
+                  <img src="tilefloors.jpeg">
+
+
+                </div>
+
+                <div id="center">
+
+                  <img src="wall4.jpeg">
+
+
+                </div>
+
+
+
+          </div>
+
+
+  </div>
+
+
+      <div id='final'>
+
+        <div class="row">
+          <div class="clearfix visible-sm"> </div>
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="room1.jpeg" alt=""></div>
+
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="room2.jpeg" alt=""></div>
+
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="room3.jpeg" alt=""></div>
+
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="room4.jpeg" alt=""></div>
+        </div>
+
+        <p class="ttext">These are screenshots from my final project, which can be found <a href="south.html">here</a> </p>
+        <br>
+      <p class="ttext">First, I took the images from the <a href="#gallery">Art Gallery</a> tier below, and cut and pasted them on stock images of walls taken from google images. </p>
+<br>
+      <p class="ttext">Next, to create the illusion of depth with one-point perspective (with the minimum number of images possible), the pictues were resized, repositioned, transformed on the X, Y, and Z axes only utilizing CSS.</p>
+      <br>
+
+            <p class="ttext">These changes can be seen animated above in the <a href="#overview">CSS Transformations</a> tier.</p>
+                <br>
+            <p class="ttext">The turn arrows were then added and animated using Javascript.</p>
+
+
+      </div>
+
+      <div id='gallery'>
+
+
+        <div class="row">
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/dear.jpg" alt=""></div>
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/float.jpg" alt=""></div>
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/gk.jpg" alt=""></div>
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/glass.jpg" alt=""></div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/roots.jpg" alt=""></div>
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/rug.jpg" alt=""></div>
+          <div class="clearfix visible-sm"> </div>
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/shevy.jpg" alt=""></div>
+          <div class="col-1g-3 col-md-3 col-sm-6 col-xs-12"><img src="images/random/vortex.jpg" alt=""></div>
 
         </div>
+
+        <br>
+        <p class="ttext">This is a smaller version of my artwork image gallery, from which the images on the walls were taken.  The original artwork gallery, plus another simple bootstrap gallery, can be found <a href="home.html">here.</a> </p>
 
       </div>
 
 
+
+
+      </div>
+      <script>
+        $(document).ready(function() {
+          $('.nav-wrapper').onePageNav();
+        });
+      </script>
+      <script src="onepage.js" charset="utf-8"></script>
+      <script src="onepage.js" charset="utf-8"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+      </script>
     </body>
 
   </html>

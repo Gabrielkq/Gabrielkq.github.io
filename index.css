@@ -1,230 +1,631 @@
-* {box-sizing: border-box;
-overflow: visible;}
+* {
+  box-sizing: border-box;
 
 
-#roomAni {
-  height: 110%;
-  background-color: #a3b4d1;
-  padding-top:10px;
-  padding-left: 10px;
+
 }
 
-#roomPic {position: fixed;
-top: 17px;
-left: 955px;}
+.nav-wrapper {z-index: 100;
 
-.ceiling img {
-  width: 99%
+
 }
 
-.front img {
-  width: 99%
+.floaty img {z-index: 25}
+
+.final img {z-index: 50}
+
+.gallerym img {z-index: 75}
+
+
+
+
+nav {
+  float:left;
+    text-align: right;
+    background-color: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 30px;
+          border-style: groove;
 }
 
-.floor {
-  width: 420px
+nav ul {
+    margin: 0;
+    padding: 0;
 }
 
-.ceiling {
-  width: 418px
+.nav-wrapper li {
+    display: inline-block;
+    padding: 0 30px;
+
 }
 
-#floaty img {
-  width: 400px;
-  float: left
-}
-/*
-#ceiling {
-  transition-duration: 4s;
-  transition-delay: 5s;
+.nav-wrapper a {
+    color: red;
+
 }
 
-#left {
-  transition-duration: 6s;
-  transition-delay: 3s;
-}
+.ttext {font-size: 23px}
 
-#right {
-  transition-duration: 5s;
-  transition-delay: 4s;
-}
+#cont {width: 100%
+clear:both;}
 
-#floor {
-  transition-duration: 5s;
-  transition-delay: 4s;
-}
+#final {
+  height: 250%;
+padding: 50px 20px;
+background-size: cover;
+background-attachment: fixed;
+  background-color: gray;}
 
-#center {
-  transition-duration: 4s;
-  transition-delay: 25s;
-}
+  #gallery {
+    height: 510%;
+  padding: 50px 20px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-color: lavender;}
 
-#center img{
-  transition-duration: 4s;
-  transition-delay: 5s;
-}
 
+
+      #overview {
+        height: 270%;
+      padding: 50px 20px;
+      background-size: cover;
+      background-attachment: fixed;
+        background-color: lightgrey;}
+
+        #content{        height: 170%;
+            padding-left: 170px;
+          width:100%;
+              padding: 50px 20px;
+              background-size: cover;
+              background-attachment: fixed;
+          background-color: #af976d;
+          font-style: arial;
+          font-size: 20px;
+        }
+
+
+
+
+        .agk {
+          font-size: 43px;
+          font-family: arial;
+          text-align: right;
+          width: 900px;
+        }
+
+        #header {
+          width: 80%
+        }
+
+        a:link {
+          color: blue;
+        }
+
+        a:visited {
+          color: #000066;
+        }
+
+        a:hover {
+          color: #9933FF;
+        }
+
+
+      /*  .content {
+          padding-left: 170px;
+          width: 800px;
+          padding-bottom: 45px;
+          border-style: groove;
+          margin: 0 auto;
+        }*/
+
+        .stage {
+          font-family: georgia;
+          font-size: 31px;
+        }
+
+        .william {
+          padding-left: 300px;
+          margin-bottom: 51px;
+          margin-top: -23px;
+          font-family: Lucida;
+        }
+
+        #tram {
+          float: left;
+          padding-right: 27px;
+          width: 390px;
+        }
+
+        .textright p {
+          margin-right: 17px;
+        }
+
+        .art img {
+          width: 300px;
+          float: left;
+          margin: 100px;
+        }
+
+        #footer {
+          text-align: center;
+          border-style: groove;
+          border-color: gray;
+          width: 570px;
+          margin: 0 auto;
+          margin-top: 23px;
+        }
+
+        #hm {
+          text-align: right;
+          padding-right: 23px;
+        }
+
+        .row img {
+          width: 80%;
+          margin: 20px;
+        }
+    /*    @media (max-width: 1000px) {
+          #gallery {
+
+            height: 250%;
+          padding: 150px 20px;
+          background-size: cover;
+          background-attachment: fixed;
+            background-color: lavender;}
+
+            #content{
+
+                            height: 150%;
+                padding-left: 170px;
+              width:100%;
+                  padding: 150px 20px;
+                  background-size: cover;
+                  background-attachment: fixed;
+              background-color: #af976d;
+              font-style: arial;
+              font-size: 20px;
+            }
+          }
 */
 
-@keyframes floorMove {
-  100% {
-    transform-origin: center;
-    position: absolute;
-    left: 272px;
-    top: 349px;
-    transform: perspective(520px) rotateX(69deg);
-  }}
+    @media (min-width: 1000px) {
+
+      #overview {
+        height: 220%;
+      padding: 50px 20px;
+      background-size: cover;
+      background-attachment: fixed;
+        background-color: lightgray;}
+
+        #gallery {
+          height: 300%;
+        padding: 50px 20px;
+        background-size: cover;
+        background-attachment: fixed;
+          background-color: lavender;}
 
 
 
-  #floor {
-    /*The name of your defined animation (after @keyframes)*/
-    -webkit-animation-name: floorMove;
-      -webkit-animation-delay: 3s;
-    /*How long the animation will run*/
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-       -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-         -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-            transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+          /*  #final {
+              height: 100%;
+            padding: 50px 20px;
+            background-size: cover;
+            background-attachment: fixed;
+              background-color: grey;}*/
+
+              #content{        height: 100%;
+                  padding-left: 170px;
+                width:100%;
+                    padding: 50px 20px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                background-color: #af976d;
+                font-style: arial;
+                font-size: 20px;
+              }
+            }
+
+
+            * {box-sizing: border-box;
+            overflow: visible;}
+
+
+            #roomAni {
+              height: 210%;
+              background-color: #a3b4d1;
+              padding-top:10px;
+              padding-left: 10px;
+            }
+
+            #roomPic {position: relative;
+            top: 17px;
+            left: 955px;}
+
+            .ceiling img {
+              width: 99%
+            }
+
+            .front img {
+              width: 99%
+            }
+
+            .floor {
+              width: 420px
+            }
+
+            .ceiling {
+              width: 418px
+            }
+
+            #floaty img {
+              width: 400px;
+              float: left
+            }
+            /*
+            #ceiling {
+              transition-duration: 4s;
+              transition-delay: 5s;
+            }
+
+            #left {
+              transition-duration: 6s;
+              transition-delay: 3s;
+            }
+
+            #right {
+              transition-duration: 5s;
+              transition-delay: 4s;
+            }
+
+            #floor {
+              transition-duration: 5s;
+              transition-delay: 4s;
+            }
+
+            #center {
+              transition-duration: 4s;
+              transition-delay: 25s;
+            }
+
+            #center img{
+              transition-duration: 4s;
+              transition-delay: 5s;
+            }
+
+            */
+            * {box-sizing: border-box;
+            overflow: visible;}
+
+
+            #roomAni {
+              height: 210%;
+              background-color: #a3b4d1;
+              padding-top:10px;
+              padding-left: 10px;
+            }
+
+            #roomPic {position: fixed;
+            top: 17px;
+            left: 955px;}
+
+            .ceiling img {
+              width: 99%
+            }
+
+            .front img {
+              width: 99%
+            }
+
+            .floor {
+              width: 420px
+            }
+
+            .ceiling {
+              width: 418px
+            }
+
+            #floaty img {
+              width: 400px;
+              float: left
+            }
+            /*
+            #ceiling {
+              transition-duration: 4s;
+              transition-delay: 5s;
+            }
+
+            #left {
+              transition-duration: 6s;
+              transition-delay: 3s;
+            }
+
+            #right {
+              transition-duration: 5s;
+              transition-delay: 4s;
+            }
+
+            #floor {
+              transition-duration: 5s;
+              transition-delay: 4s;
+            }
+
+            #center {
+              transition-duration: 4s;
+              transition-delay: 25s;
+            }
+
+            #center img{
+              transition-duration: 4s;
+              transition-delay: 5s;
+            }
+
+            */
+
+            @keyframes floorMove {
+              100% {
+                transform-origin: center;
+                position: absolute;
+                left: 272px;
+                top: 349px;
+                transform: perspective(520px) rotateX(69deg);
+              }}
 
 
 
-  }
+              #floor {
+                /*The name of your defined animation (after @keyframes)*/
+                -webkit-animation-name: floorMove;
+                  -webkit-animation-delay: 3s;
+                /*How long the animation will run*/
+                -webkit-animation-duration: 5s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                   -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                     -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                        transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
 
-  @keyframes centerMove {
-    100% {
-  position: absolute;
-      left: 318px;
-      top: 202px;
-    width: 310px;
-  height:310px;
-    }}
+
+
+              }
+
+              @keyframes centerMove {
+                100% {
+              position: absolute;
+                  left: 318px;
+                  top: 202px;
+                width: 310px;
+              height:310px;
+                }}
 
 
 
-    #center {
-      /*The name of your defined animation (after @keyframes)*/
-      -webkit-animation-name: centerMove;
-        -webkit-animation-delay: 3s;
-      /*How long the animation will run*/
-      -webkit-animation-duration: 5s;
-          -webkit-animation-iteration-count: infinite;
-          -webkit-animation-direction: alternate;
-          -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-     -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-       -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-          transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                #center {
+                  /*The name of your defined animation (after @keyframes)*/
+                  -webkit-animation-name: centerMove;
+                    -webkit-animation-delay: 3s;
+                  /*How long the animation will run*/
+                  -webkit-animation-duration: 5s;
+                      -webkit-animation-iteration-count: infinite;
+                      -webkit-animation-direction: alternate;
+                      -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                 -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                   -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                      transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
 
+
+                }
+
+            @keyframes centerImove {
+            100% {  width: 305px};
+            }
+
+            #center img{
+              /*The name of your defined animation (after @keyframes)*/
+              -webkit-animation-name: centerImove;
+                -webkit-animation-delay: 3s;
+              /*How long the animation will run*/
+              -webkit-animation-duration: 5s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+               -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                 -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                    transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+            }
+
+
+
+              @keyframes ceilingMove {
+                100% {
+                  left: 265px;
+                  top: -45px;
+                  transform-origin: center;
+              position: absolute;
+                  transform: perspective(560px) rotateZ(180deg) rotateX(70deg);
+                }
+              }
+              #ceiling {
+                /*The name of your defined animation (after @keyframes)*/
+                -webkit-animation-name: ceilingMove;
+                  -webkit-animation-delay: 3s;
+                /*How long the animation will run*/
+                -webkit-animation-duration: 5s;
+                  -webkit-animation-iteration-count: infinite;
+                  -webkit-animation-direction: alternate;
+                  -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                     -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                       -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                          transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+              }
+              @keyframes leftMove {
+                100% {
+                  transform-origin: center;
+                  transform: perspective(560px) rotateY(70deg);
+                  position: absolute;
+                  left: 69px;
+                  top: 154px;
+                }
+              }
+              #left {
+                /*The name of your defined animation (after @keyframes)*/
+                -webkit-animation-name: leftMove;
+                  -webkit-animation-delay: 3s;
+                /*How long the animation will run*/
+                -webkit-animation-duration: 5s;
+                  -webkit-animation-iteration-count: infinite;
+                  -webkit-animation-direction: alternate;
+                  -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+             -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+               -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                  transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+              }
+              @keyframes rightMove {
+                100% {
+                  float: right;
+                  transform-origin: center;
+              position: absolute;
+                  transform: perspective(560px) rotateZ(180deg) rotateY(70deg);
+                  left: 470px;
+                  top: 152px;
+                }
+              }
+              #right {
+                /*The name of your defined animation (after @keyframes)*/
+                -webkit-animation-name: rightMove;
+                /*How long the animation will run*/
+                -webkit-animation-delay: 3s;
+                -webkit-animation-duration: 5s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                   -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                     -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+                        transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
+
+
+              }
+
+              #room {float:right;}
+
+              #expalain {float:right;
+                background-color: #dae0ea;
+                border-style: groove;
+                border-width: 2px;
+                padding-left: 7px;
+                padding-right: 7px;
+                width: 520px;
+                position: fixed;
+                top: 437px;
+                left: 890px;}
+
+                p {font-weight: bold;}
+
+
+    @media (max-width: 600px) {
+      #gallery {
+
+        height: 500%;
+      padding: 150px 20px;
+      background-size: cover;
+      background-attachment: fixed;
+        background-color: lavender;}
+
+
+
+      .stage {
+        font-family: georgia;
+        font-size: 31px;
+      }
+
+
+      .william {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-family: Lucida;
+      }
+      .textright {
+        clear: both;
+        padding: 23px;
+      }
+      #content {
+        width: 100%;
+      }
+      #tram {
+        width: 100%;
+      }
+      .content {
+        border: none;
+      }
+      #header {
+        margin: 0 auto;
+        width: 570px;
+      }
+      .agk {
+        text-align: left;
+      }
+      #footer {
+        width: 570px;
+      }
+      #hm {
+        text-align: center;
+      }
+      #overview {
+
+        height: 180%;
+      padding: 150px 20px;
+      background-size: cover;
+      background-attachment: fixed;
+        background-color: lightgray;}
+
+
+
+
+            #final {
+              height: 250%;
+            padding: 150px 20px;
+            background-size: cover;
+            background-attachment: fixed;
+              background-color: grey;}
+
+              #content{
+
+                              height: 200%;
+                  padding-left: 170px;
+                width:100%;
+                    padding: 150px 20px;
+                    background-size: cover;
+                    background-attachment: fixed;
+                background-color: #af976d;
+                font-style: arial;
+                font-size: 20px;
+              }
+
+              nav {
+                  text-align:center;
+                  background-color: pink;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 99%;
+                  height: 110px;
+                        border-style: groove;
+              }
+              .nav-wrapper li {
+                  display:block;
+                  padding: 0 30px;
+                    height: 20px;
+
+              }
 
     }
 
-@keyframes centerImove {
-100% {  width: 305px};
-}
-
-#center img{
-  /*The name of your defined animation (after @keyframes)*/
-  -webkit-animation-name: centerImove;
-    -webkit-animation-delay: 3s;
-  /*How long the animation will run*/
-  -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-   -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-     -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-        transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-
-}
-
-
-
-  @keyframes ceilingMove {
-    100% {
-      left: 265px;
-      top: -45px;
-      transform-origin: center;
-  position: absolute;
-      transform: perspective(560px) rotateZ(180deg) rotateX(70deg);
-    }
-  }
-  #ceiling {
-    /*The name of your defined animation (after @keyframes)*/
-    -webkit-animation-name: ceilingMove;
-      -webkit-animation-delay: 3s;
-    /*How long the animation will run*/
-    -webkit-animation-duration: 5s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
-      -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-         -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-           -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-              transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-
-  }
-  @keyframes leftMove {
-    100% {
-      transform-origin: center;
-      transform: perspective(560px) rotateY(70deg);
-      position: absolute;
-      left: 69px;
-      top: 154px;
-    }
-  }
-  #left {
-    /*The name of your defined animation (after @keyframes)*/
-    -webkit-animation-name: leftMove;
-      -webkit-animation-delay: 3s;
-    /*How long the animation will run*/
-    -webkit-animation-duration: 5s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
-      -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
- -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-   -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-      transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-
-  }
-  @keyframes rightMove {
-    100% {
-      float: right;
-      transform-origin: center;
-  position: absolute;
-      transform: perspective(560px) rotateZ(180deg) rotateY(70deg);
-      left: 470px;
-      top: 152px;
-    }
-  }
-  #right {
-    /*The name of your defined animation (after @keyframes)*/
-    -webkit-animation-name: rightMove;
-    /*How long the animation will run*/
-    -webkit-animation-delay: 3s;
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-       -moz-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-         -o-transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-            transition-timing-function: cubic-bezier(1.000, 0.470, 0.000, 0.420);
-
-
-  }
-
-  #room {float:right;}
-
-  #expalain {float:right;
-    background-color: #dae0ea;
-    border-style: groove;
-    border-width: 2px;
-    padding-left: 7px;
-    padding-right: 7px;
-    width: 520px;
-    position: fixed;
-    top: 437px;
-    left: 890px;}
-
-    p {font-weight: bold;}
+        .colls {float: left;
+                width: 23%}
