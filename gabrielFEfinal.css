@@ -1,0 +1,29 @@
+
+body {background-color:#ffe6a8}
+
+th {background-color: #FFFFFF;
+  height: 37px;
+  font-size: 23px;
+  font-family: georgia ;
+}
+
+table,th, td {border: 2px groove darkgrey;}
+tbody tr:nth-of-type(odd){
+	background:#cedbe0;
+}
+
+tbody tr:nth-of-type(even){
+	background:#FFFFFF;
+}
+
+.toprow {text-align: center;}
+
+#mainTable {margin: auto;
+  width: 80%;
+
+
+}
+#input-bar {width: 70%;
+margin:auto;}
+
+#sortButton {margin-left: 140px}
